@@ -41,7 +41,7 @@ with open(tweetfile, 'a') as f:
       ts = utc.localize(t.created_at).astimezone(homeTZ)
       lines = ['',
                t.text,
-               ts.strftime(datefmt),
+               ts.strftime(datefmt).decode('utf8'),
                urlprefix + t.id_str,
                '- - - - -',
                '']
