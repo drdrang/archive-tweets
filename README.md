@@ -4,7 +4,7 @@ This Python script and the related files will download your tweets from Twitter 
 
 The files in the repository are:
 
-* `archive-tweets.py`. This is the script that does the archiving. It can be stored anywhere and should be run periodically via a system like `cron` or `launchd`.
+* `archive-tweets.py`. This is the script that does the archiving. It can be stored anywhere and should be run periodically via a system like `cron` or `launchd`. The "Parameters" section at the top of the file should be edited to your Twitter user name, your time zone, and the directory where you want to keep the archive.
 * `twitter.txt`. This is the archive file itself, currently empty. It should be kept in a folder named `twitter` inside your Dropbox folder.
 * `twitter-credentials`. This file should be renamed `.twitter-credentials` and saved in your home directory. The values for `consumerKey`, `consumerSecret`, `token`, and `tokenSecret` must be provided by Twitter. Go to the [Twitter developer site][4], click the "Create an app" link, and follow the instructions given there for creating an app. When you're done, you'll be given the four credentials—long strings of letters and numbers—you'll need.
 * `lastID.txt`. This file holds the ID number of the most recently archived tweet; it currently holds a dummy value you'll need to change. It should be kept in the same folder as `twitter.txt`.
